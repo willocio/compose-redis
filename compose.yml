@@ -1,0 +1,8 @@
+---
+services:
+  redis:
+    container_name: redis
+    image: redis:7.2.4
+    command: bash -c "redis-server --appendonly yes --requirepass Lanrete"
+    ports:
+      - 6379:6379
